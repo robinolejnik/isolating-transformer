@@ -1,0 +1,489 @@
+EESchema Schematic File Version 4
+LIBS:isolating-transformer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x01_Female J4n
+U 1 1 5D53032D
+P 10550 4500
+F 0 "J4n" H 10578 4526 50  0000 L CNN
+F 1 "blue" H 10578 4435 50  0000 L CNN
+F 2 "" H 10550 4500 50  0001 C CNN
+F 3 "~" H 10550 4500 50  0001 C CNN
+	1    10550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4l
+U 1 1 5D531ACD
+P 10550 4100
+F 0 "J4l" H 10578 4126 50  0000 L CNN
+F 1 "black" H 10578 4035 50  0000 L CNN
+F 2 "" H 10550 4100 50  0001 C CNN
+F 3 "~" H 10550 4100 50  0001 C CNN
+	1    10550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5a
+U 1 1 5D531E62
+P 10550 3200
+F 0 "J5a" H 10578 3226 50  0000 L CNN
+F 1 "black" H 10578 3135 50  0000 L CNN
+F 2 "" H 10550 3200 50  0001 C CNN
+F 3 "~" H 10550 3200 50  0001 C CNN
+	1    10550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5b
+U 1 1 5D53244A
+P 10550 2800
+F 0 "J5b" H 10578 2826 50  0000 L CNN
+F 1 "black" H 10578 2735 50  0000 L CNN
+F 2 "" H 10550 2800 50  0001 C CNN
+F 3 "~" H 10550 2800 50  0001 C CNN
+	1    10550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4pe
+U 1 1 5D5326B9
+P 10550 4300
+F 0 "J4pe" H 10578 4326 50  0000 L CNN
+F 1 "green/yellow" H 10578 4235 50  0000 L CNN
+F 2 "" H 10550 4300 50  0001 C CNN
+F 3 "~" H 10550 4300 50  0001 C CNN
+	1    10550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5D5329A3
+P 10550 3600
+F 0 "J3" H 10578 3626 50  0000 L CNN
+F 1 "CEE-7/3" H 10578 3535 50  0000 L CNN
+F 2 "" H 10550 3600 50  0001 C CNN
+F 3 "~" H 10550 3600 50  0001 C CNN
+	1    10550 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10350 3600
+Wire Wire Line
+	10350 3200 10150 3200
+Wire Wire Line
+	10150 3200 10150 3700
+Wire Wire Line
+	10150 3700 10350 3700
+Wire Wire Line
+	9950 3500 10350 3500
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5D535CA8
+P 10550 4900
+F 0 "J2" H 10578 4926 50  0000 L CNN
+F 1 "CEE-7/3" H 10578 4835 50  0000 L CNN
+F 2 "" H 10550 4900 50  0001 C CNN
+F 3 "~" H 10550 4900 50  0001 C CNN
+	1    10550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2800 9950 2800
+Wire Wire Line
+	9950 2800 9950 3500
+Wire Wire Line
+	10350 5000 10150 5000
+Wire Wire Line
+	10150 5000 10150 4500
+Wire Wire Line
+	10150 4500 10350 4500
+Wire Wire Line
+	10350 4900 10050 4900
+Wire Wire Line
+	10050 4900 10050 4300
+Wire Wire Line
+	10050 4300 10350 4300
+Wire Wire Line
+	9950 4100 10350 4100
+$Comp
+L power:Earth #PWR?
+U 1 1 5D53F569
+P 10050 5100
+F 0 "#PWR?" H 10050 4850 50  0001 C CNN
+F 1 "Earth" H 10050 4950 50  0001 C CNN
+F 2 "" H 10050 5100 50  0001 C CNN
+F 3 "~" H 10050 5100 50  0001 C CNN
+	1    10050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4900 10050 5100
+Connection ~ 10050 4900
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D550F09
+P 8550 4250
+F 0 "SW?" H 8550 3925 50  0000 C CNN
+F 1 "SW_SPDT" H 8550 4016 50  0000 C CNN
+F 2 "" H 8550 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+	1    8550 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Voltmeter_AC MES?
+U 1 1 5D553F45
+P 7700 4450
+F 0 "MES?" H 7853 4496 50  0000 L CNN
+F 1 "Voltmeter_AC" H 7853 4405 50  0000 L CNN
+F 2 "" V 7700 4550 50  0001 C CNN
+F 3 "~" V 7700 4550 50  0001 C CNN
+	1    7700 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Amperemeter_AC MES?
+U 1 1 5D555EDC
+P 7700 4050
+F 0 "MES?" V 7410 4050 50  0000 C CNN
+F 1 "Amperemeter_AC" V 7501 4050 50  0000 C CNN
+F 2 "" V 7700 4150 50  0001 C CNN
+F 3 "~" V 7700 4150 50  0001 C CNN
+	1    7700 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D55D6E8
+P 6600 3800
+F 0 "SW?" H 6250 4300 50  0000 C CNN
+F 1 "SW_SPDT" H 6600 4250 50  0000 C CNN
+F 2 "" H 6600 3800 50  0001 C CNN
+F 3 "~" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D550900
+P 6600 4700
+F 0 "SW?" H 6400 4800 50  0000 C CNN
+F 1 "SW_SPDT" H 6600 4500 50  0000 C CNN
+F 2 "" H 6600 4700 50  0001 C CNN
+F 3 "~" H 6600 4700 50  0001 C CNN
+	1    6600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3900 7000 3900
+Wire Wire Line
+	7000 4600 6800 4600
+Wire Wire Line
+	8950 3700 8950 4150
+Wire Wire Line
+	8950 4150 8750 4150
+Wire Wire Line
+	8950 4350 8750 4350
+Wire Wire Line
+	7900 4050 8000 4050
+Wire Wire Line
+	8000 4050 8000 4250
+Wire Wire Line
+	8000 4450 7900 4450
+Wire Wire Line
+	8350 4250 8000 4250
+Connection ~ 8000 4250
+Wire Wire Line
+	8000 4250 8000 4450
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D5805F8
+P 6600 4250
+F 0 "SW?" H 7100 4200 50  0000 C CNN
+F 1 "SW_SPDT" H 7200 4300 50  0000 C CNN
+F 2 "" H 6600 4250 50  0001 C CNN
+F 3 "~" H 6600 4250 50  0001 C CNN
+	1    6600 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 4150 6200 3500
+Wire Wire Line
+	6200 4350 6200 5000
+Wire Notes Line
+	8100 4650 7400 4650
+Wire Notes Line
+	7400 4650 7400 3850
+Wire Notes Line
+	7400 3850 8100 3850
+Wire Notes Line
+	8100 3850 8100 4650
+Wire Wire Line
+	7000 3900 7000 4050
+Wire Wire Line
+	6200 4150 6400 4150
+Wire Wire Line
+	6200 4350 6400 4350
+Wire Wire Line
+	6800 4250 7200 4250
+Wire Wire Line
+	7200 4250 7200 4450
+Wire Wire Line
+	7200 4450 7500 4450
+Wire Wire Line
+	7500 4050 7000 4050
+Connection ~ 7000 4050
+Wire Wire Line
+	7000 4050 7000 4600
+Wire Wire Line
+	6800 3700 8950 3700
+Wire Wire Line
+	6800 4800 8950 4800
+Wire Wire Line
+	8950 4350 8950 4800
+Wire Wire Line
+	10350 4800 9950 4800
+Wire Wire Line
+	9950 4100 9950 4800
+$Comp
+L Device:Fuse F3
+U 1 1 5D55D6DC
+P 5650 3750
+F 0 "F3" V 5453 3750 50  0000 C CNN
+F 1 "4A" V 5544 3750 50  0000 C CNN
+F 2 "" V 5580 3750 50  0001 C CNN
+F 3 "~" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_DPST SW?
+U 1 1 5D5B325D
+P 9550 4900
+F 0 "SW?" H 9550 5225 50  0000 C CNN
+F 1 "direct_en" H 9550 5134 50  0000 C CNN
+F 2 "" H 9550 4900 50  0001 C CNN
+F 3 "~" H 9550 4900 50  0001 C CNN
+	1    9550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST SW?
+U 1 1 5D5B5123
+P 9550 3600
+F 0 "SW?" H 9550 3925 50  0000 C CNN
+F 1 "isolated_en" H 9550 3834 50  0000 C CNN
+F 2 "" H 9550 3600 50  0001 C CNN
+F 3 "~" H 9550 3600 50  0001 C CNN
+	1    9550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3500 9950 3500
+Connection ~ 9950 3500
+Wire Wire Line
+	9750 3700 10150 3700
+Connection ~ 10150 3700
+Wire Wire Line
+	9750 4800 9950 4800
+Connection ~ 9950 4800
+Wire Wire Line
+	9750 5000 10150 5000
+Connection ~ 10150 5000
+Wire Wire Line
+	9350 4800 8950 4800
+Connection ~ 8950 4800
+Wire Wire Line
+	9350 5000 6200 5000
+Wire Wire Line
+	9350 3700 8950 3700
+Connection ~ 8950 3700
+Wire Wire Line
+	9350 3500 6200 3500
+Connection ~ 6200 3500
+$Comp
+L Device:Fuse F2
+U 1 1 5D5D8412
+P 3600 3500
+F 0 "F2" V 3403 3500 50  0000 C CNN
+F 1 "4A" V 3494 3500 50  0000 C CNN
+F 2 "" V 3530 3500 50  0001 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DPST SW?
+U 1 1 5D5D9AAB
+P 3050 3600
+F 0 "SW?" H 3050 3925 50  0000 C CNN
+F 1 "isolated" H 3050 3834 50  0000 C CNN
+F 2 "" H 3050 3600 50  0001 C CNN
+F 3 "~" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5000 2650 5000
+Connection ~ 6200 5000
+Wire Wire Line
+	6000 3800 6000 3750
+Wire Wire Line
+	6000 3750 5800 3750
+Wire Wire Line
+	6400 4700 6000 4700
+Wire Wire Line
+	6000 4700 6000 4800
+Wire Wire Line
+	2450 4800 6000 4800
+Wire Wire Line
+	6200 3500 5450 3500
+Wire Wire Line
+	2650 3700 2850 3700
+Wire Wire Line
+	2650 3700 2650 5000
+Wire Wire Line
+	2850 3500 2450 3500
+Wire Wire Line
+	2450 3500 2450 4800
+Wire Wire Line
+	6000 3800 6400 3800
+Connection ~ 2650 5000
+Connection ~ 2450 4800
+Wire Wire Line
+	2650 5000 2250 5000
+Wire Wire Line
+	2250 4800 2450 4800
+Wire Wire Line
+	1500 5000 1850 5000
+Connection ~ 1500 5000
+Wire Wire Line
+	1500 5100 1500 5000
+Wire Wire Line
+	1500 5600 1500 5500
+$Comp
+L power:Earth #PWR?
+U 1 1 5D56344B
+P 1500 5600
+F 0 "#PWR?" H 1500 5350 50  0001 C CNN
+F 1 "Earth" H 1500 5450 50  0001 C CNN
+F 2 "" H 1500 5600 50  0001 C CNN
+F 3 "~" H 1500 5600 50  0001 C CNN
+	1    1500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp_Neon NE1
+U 1 1 5D56182B
+P 1500 5300
+F 0 "NE1" H 1628 5346 50  0000 L CNN
+F 1 "phase_error" H 1628 5255 50  0000 L CNN
+F 2 "" V 1500 5400 50  0001 C CNN
+F 3 "~" V 1500 5400 50  0001 C CNN
+	1    1500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4800 1850 4800
+Wire Wire Line
+	1150 5000 1500 5000
+Wire Wire Line
+	1150 4800 1350 4800
+$Comp
+L Device:Fuse F1
+U 1 1 5D55827E
+P 1500 4800
+F 0 "F1" V 1303 4800 50  0000 C CNN
+F 1 "10A" V 1394 4800 50  0000 C CNN
+F 2 "" V 1430 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5D555E63
+P 2050 4900
+F 0 "SW1" H 2050 5225 50  0000 C CNN
+F 1 "master" H 2050 5134 50  0000 C CNN
+F 2 "" H 2050 4900 50  0001 C CNN
+F 3 "~" H 2050 4900 50  0001 C CNN
+	1    2050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4900 1250 5150
+Wire Wire Line
+	1150 4900 1250 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 5D52F67E
+P 1250 5150
+F 0 "#PWR?" H 1250 4900 50  0001 C CNN
+F 1 "Earth" H 1250 5000 50  0001 C CNN
+F 2 "" H 1250 5150 50  0001 C CNN
+F 3 "~" H 1250 5150 50  0001 C CNN
+	1    1250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5D52E579
+P 950 4900
+F 0 "J1" H 1058 5181 50  0000 C CNN
+F 1 "IEC-60320 C14" H 1058 5090 50  0000 C CNN
+F 2 "" H 950 4900 50  0001 C CNN
+F 3 "~" H 950 4900 50  0001 C CNN
+	1    950  4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3500 3450 3500
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D5FF866
+P 4500 3950
+F 0 "SW?" H 4500 4250 50  0000 C CNN
+F 1 "+ / 0" H 4500 4150 50  0000 C CNN
+F 2 "" H 4500 3950 50  0001 C CNN
+F 3 "~" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5D601B22
+P 5000 4050
+F 0 "SW?" H 5000 3725 50  0000 C CNN
+F 1 "+0 / -" H 5000 3816 50  0000 C CNN
+F 2 "" H 5000 4050 50  0001 C CNN
+F 3 "~" H 5000 4050 50  0001 C CNN
+	1    5000 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3850 4100 3850
+Wire Wire Line
+	4300 4050 4100 4050
+Wire Wire Line
+	4800 4150 4600 4150
+Wire Wire Line
+	4600 4150 4600 4250
+Wire Wire Line
+	4600 4250 4100 4250
+Wire Wire Line
+	4700 3950 4800 3950
+$EndSCHEMATC
